@@ -28,9 +28,9 @@ const HeroInline = () => {
   return (
     <section aria-label="Hero section" className="relative flex items-center h-fit md:h-svh pt-25 pb-20 md:py-0">
       <HeroBackgroundSlot />
-      <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20 w-content-width mx-auto">
-        <div className="w-full md:w-1/2">
-          <div className="flex flex-col items-center md:items-start gap-3">
+      <div className="flex flex-col items-center justify-center w-content-width mx-auto">
+        <div className="w-full max-w-4xl">
+          <div className="flex flex-col items-center gap-4 text-center">
             <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
               <p>{"Consultoria em IA"}</p>
             </div>
@@ -40,7 +40,7 @@ const HeroInline = () => {
               variant={"fade-blur"}
               gradientText={true}
               tag="h1"
-              className="text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-center md:text-left text-balance"
+              className="text-6xl md:text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-center text-balance"
             />
 
             <TextAnimation
@@ -48,19 +48,15 @@ const HeroInline = () => {
               variant={"fade-blur"}
               gradientText={false}
               tag="p"
-              className="md:max-w-8/10 text-lg md:text-xl leading-snug text-center md:text-left text-balance"
+              className="max-w-2xl text-lg md:text-xl leading-snug text-center text-balance"
             />
 
-            <div className="flex flex-wrap max-md:justify-center gap-3 mt-2 md:mt-3">
+            <div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3">
               <Button text={primaryButton.text} href={primaryButton.href} variant="primary"/>
-              <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary"animationDelay={0.1} />
+              <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} />
             </div>
           </div>
         </div>
-
-        <ScrollReveal variant="slide-up" delay={0.2} className="w-full md:w-1/2 h-100 md:h-[65vh] md:max-h-[75svh] p-2 xl:p-3 2xl:p-4 card rounded overflow-hidden">
-          <ImageOrVideo imageSrc={"https://storage.googleapis.com/webild/users/user_3Fk11DM8jkTaVwbvzwOo9lviWTJ/uploaded-1792293732155-jsu87mi3.png"} />
-        </ScrollReveal>
       </div>
     </section>
   );
