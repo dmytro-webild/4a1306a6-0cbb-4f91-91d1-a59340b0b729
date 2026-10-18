@@ -57,7 +57,10 @@ const NavbarCentered = ({ logo, navItems, ctaButton }: NavbarCenteredProps) => {
         )}
       >
         <div className="relative mx-auto flex items-center justify-between h-full w-content-width">
-          <a href="/" className="text-xl font-medium text-foreground">{logo}</a>
+          <a href="/" className="flex items-center gap-2.5 text-xl font-medium text-foreground tracking-tight">
+            <img src="https://storage.googleapis.com/webild/users/user_3Fk11DM8jkTaVwbvzwOo9lviWTJ/uploaded-1792293732155-jsu87mi3.png" alt="Aion Symbol" className="h-7 w-auto object-contain drop-shadow-[0_0_12px_rgba(168,204,255,0.35)]" />
+            <span>{logo}</span>
+          </a>
 
           <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
             {navItems.map((item) => (
