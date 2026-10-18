@@ -21,7 +21,7 @@ export default function HeroSection(): React.JSX.Element {
             text: "Explorar projetos",
             href: "#projects",
           }}
-          imageSrc="https://images.pexels.com/photos/20337648/pexels-photo-20337648.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+          imageSrc="https://storage.googleapis.com/webild/users/user_3Fk11DM8jkTaVwbvzwOo9lviWTJ/uploaded-1792293732155-jsu87mi3.png"
           textAnimation="fade-blur"
         />
         </SectionErrorBoundary>
